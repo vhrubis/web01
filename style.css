@@ -7,3 +7,49 @@ body {
 h1 {
     color: #4caf50;            
 }
+/* Styl pro naši krabici (kontejner) s formulářem */
+.form-container {
+    background-color: #2a2a2a; /* Trochu světlejší šedá než pozadí webu, ať to vynikne */
+    padding: 30px;             /* Prostor uvnitř krabice kolem prvků */
+    border-radius: 8px;        /* Zaoblené rohy krabice */
+    max-width: 600px;          /* Maximální šířka, aby se to neroztáhlo přes celou obrazovku */
+    margin-top: 30px;          /* Mezera mezi odstavcem textu a formulářem */
+}
+
+/* Styl pro popisek (label) */
+label {
+    display: block;            /* Zařídí, aby popisek byl na vlastním řádku nad polem */
+    margin-bottom: 10px;       /* Mezera mezi popiskem a textovým polem */
+    font-weight: bold;         /* Tučné písmo */
+}
+
+/* Styl pro velké textové pole (textarea) */
+textarea {
+    width: 100%;               /* Roztáhne se na celou šířku své krabice */
+    height: 150px;             /* Výška pole, aby se tam vešel delší text */
+    background-color: #333333; /* Tmavé vnitřky pole */
+    color: #ffffff;            /* Bílý text při psaní */
+    border: 1px solid #444444; /* Jemné ohraničení */
+    border-radius: 4px;        /* Lehce zaoblené rohy pole */
+    padding: 10px;             /* Text nebude nalepený na okrajích pole */
+    box-sizing: border-box;    /* Důležité: šířka 100% se nezkazí kvůli paddingu */
+    resize: vertical;          /* Uživatel může měnit výšku, ale ne šířku, aby nerobil design */
+}
+
+/* Styl pro tlačítko (button) */
+button {
+    background-color: #4caf50; /* Pěkná zelená barva */
+    color: white;              /* Bílý text na tlačítku */
+    padding: 12px 20px;        /* Velikost tlačítka */
+    border: none;              /* Žádné ošklivé výchozí ohraničení */
+    border-radius: 4px;        /* Zaoblené rohy */
+    cursor: pointer;           /* Když na to najedeš myší, ukáže se ručička */
+    font-weight: bold;         /* Tučný text */
+    margin-top: 15px;          /* Mezera mezi textovým polem a tlačítkem */
+    width: 100%;               /* Tlačítko bude stejně široké jako pole nad ním */
+}
+
+/* Efekt, když uživatel najede myší na tlačítko (hover) */
+button:hover {
+    background-color: #45a049; /* Tlačítko při najetí myší trochu ztmavne */
+}
