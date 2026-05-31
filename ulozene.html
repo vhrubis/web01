@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToxicTweet - Uložené analýzy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <div class="tabs">
+                <a href="index.html" class="tab">nový</a>
+                <a href="ulozene.html" class="tab active">uložené</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="column-left">
+            <div class="card">
+                <div class="static-text">
+                    Tady je zobrazen konkrétní analyzovaný text od uživatele, který si přál uložit pro pozdější nahlédnutí nebo úpravu...
+                </div>
+            </div>
+        </section>
+        <section class="column-right">
+            <div class="analysis-results">
+                <div class="result-section">
+                    <h2>Skóre toxicity:</h2>
+                    <p class="toxicity-score">85 %</p>
+                </div>
+
+                <div class="result-section">
+                    <h2>Seznam rizikových slov:</h2>
+                    <div class="tags">
+                        <span class="tag">nenávist</span>
+                        <span class="tag">útok</span>
+                    </div>
+                </div>
+
+                <div class="result-section">
+                    <h2>Úpravy:</h2>
+                    <div class="actions">
+                        <button class="main-button">AI návrh</button>
+                        <button class="delete-button">Odstranit ToxicTweet</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
