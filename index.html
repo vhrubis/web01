@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vládci Zeměkoule</title>
+    <title>ToxicTweet - AI Analyzer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Dobrý den, vítáme vás v našem projektu AI česká olympiáda.</h1>
-    <p>Pro naši práci jsme zvolili neskonale důležitou problematiku. Touto problematikou jsou sociální sítě.</p>
-    <div class="form-container">
-        <form>
-            <label for="user-input">Zadejte text ke kontrole pomocí AI:</label>
-            <textarea id="user-input" placeholder="Zde se rozepiš..."></textarea>
-            <button type="submit" id="submit-btn">Analyzovat text</button>
-        </form>
-    </div>
+    <header>
+        <nav class="nav-menu">
+            <div class="tabs">
+                <a href="#" class="tab active">nový</a>
+                <a href="#" class="tab">uložené</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="column-left">
+            <div class="card">
+                <form id="toxic-form">
+                    <textarea id="user-input" placeholder="Zde napište svůj ToxicTweet..."></textarea>
+                </form>
+            </div>
+        </section>
+        <section class="column-right">
+            <div class="welcome-text">
+                <h1>Vítejte na ToxicTweet!</h1>
+                <p>Analyzujte toxicitu svých tweetů pomocí naší pokročilé AI. Stačí vložit text a spustit skenování.</p>
+            </div>
+            <button type="submit" form="toxic-form" class="main-button">Analyzovat ToxicTweet</button>
+        </section>
+    </main>
 </body>
 </html>
